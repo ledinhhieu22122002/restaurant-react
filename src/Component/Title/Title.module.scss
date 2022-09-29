@@ -1,0 +1,31 @@
+.title {
+    .section_title {
+        span {
+            position: relative;
+            color: var(--color-orange-a);
+            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 4rem;
+                height: .1rem;
+                right: 0;
+                top: 50%;
+                transform: translateX(130%);
+                background-color: #ffffff;
+            }
+        }
+    }
+
+    .heading {
+        font-size: 3.2rem;
+        margin: 1rem 0;
+    }
+
+    .text {
+        color: var(--color-gray-a);
+    }
+}
