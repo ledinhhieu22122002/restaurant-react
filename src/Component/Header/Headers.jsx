@@ -3,15 +3,16 @@ import './Header.scss';
 import img from '../../img/HeaderImage.png';
 import Button from '../button/Button';
 import Title from "../Title/Title";
-const Info = (props) => {
-    return (
-        <div className="info">
-            <h3>{props.h3}</h3>
-            <p>{props.p}</p>
-        </div>
-    )
-}
+
 const Headers = () => {
+    const Info = (props) => {
+        return (
+            <div className="info">
+                <h3>{props.h3}</h3>
+                <p>{props.p}</p>
+            </div>
+        )
+    }
     return (
         <header>
             <div className="container">

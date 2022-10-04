@@ -44,17 +44,20 @@
     }
 
     .bottom {
-        .col{
+        .col {
             display: flex;
             align-items: center;
-            .row{
+
+            .row {
                 margin: auto;
                 justify-content: center;
-                .icon{
+
+                .icon {
                     flex: 1;
                 }
             }
         }
+
         button {
             margin: .5rem 0;
             background-color: transparent;
@@ -64,9 +67,10 @@
             font-weight: 500;
             display: flex;
             margin-left: auto;
+
             span {
-                svg{
-                    color: orange;
+                svg {
+                    color: var(--color-orange-a);
                 }
             }
         }

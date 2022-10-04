@@ -1,25 +1,18 @@
-import Blog from "./Component/Blog/Blog";
-import More from "./Component/CnowMore/More";
-import Contacts from "./Component/Contact/Contact";
-import Footer from "./Component/Footer/Footer";
-import Headers from "./Component/Header/Headers";
-import Menu from "./Component/Menu/Menu";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./Component/Navbar/Navbar";
-import Quote from "./Component/Quote/Quote";
-import Serving from "./Component/Serving/Serving";
-
+import HomePage from "./Pages/Home";
+import MenuPage from "./Pages/Menu";
+import AboutPage from "./Pages/About";
+import Logo from './img/Logo.svg';
 function App() {
   return (
     <>
-      <Navbar />
-      <Headers />
-      <More />
-      <Serving />
-      <Menu />
-      <Quote />
-      <Blog />
-      <Contacts />
-      <Footer />
+      <Navbar logo={Logo} />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/Menu" element={<MenuPage />} />
+        <Route path="/AboutUs" element={<AboutPage />} />
+      </Routes>
     </>)
 }
 

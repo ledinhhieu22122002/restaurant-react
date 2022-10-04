@@ -3,6 +3,7 @@ nav {
     height: 5rem;
     position: absolute;
     z-index: 1000;
+
     .logo {
         font-size: 1.5rem;
     }
@@ -10,8 +11,14 @@ nav {
     .navbar__link {
         margin: auto .7rem;
         color: #ffffff;
-        &:hover{
-            color:  var(--color-orange-a);
+        text-decoration: none;
+        
+        &:hover {
+            color: var(--color-orange-a);
+        }
+
+        &:active {
+            color: var(--color-orange-a);
         }
     }
 
@@ -19,7 +26,8 @@ nav {
     .navbar__clone_project {
         text-decoration: none;
         color: var(--color-orange-a);
-        .navbar__clone_icon{
+
+        .navbar__clone_icon {
             margin-left: 1rem;
             color: #ffffff;
         }

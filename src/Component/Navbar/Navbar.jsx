@@ -1,40 +1,37 @@
 import React from 'react';
-/* Import Navbar */
-import NavBar from "./Navbar.module.scss";
-import Logo from "../../img/Logo.svg";
+import { Link } from "react-router-dom";
+import "./Navbar.scss";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-const Navbar = () => {
+const Navbar = (props) => {
+    const LLink = (props) => {
+        return (
+            <li className="nav-item">
+                <Link className="navbar__link" to={props.to}>{props.title}</Link>
+            </li>
+        )
+    }
     return (
         <nav className="navbar navbar-expand-lg">
             <div className="container">
-                <a className={`${NavBar.navbar__logo} navbar-brand`} href='# '>
-                    <img src={Logo} alt="" />   
-                </a>
+                <Link className={`navbar__logo navbar-brand`} to='/'>
+                    <img src={props.logo} alt="" />
+                </Link>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <a className={`${NavBar.navbar__link} nav-link`} href='/Home'>Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className={`${NavBar.navbar__link} nav-link`} href='/Menu'>Menu</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className={`${NavBar.navbar__link} nav-link`} href='/AboutUs'>AboutUs</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className={`${NavBar.navbar__link} nav-link`} href='/OurStory'>Our Story</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className={`${NavBar.navbar__link} nav-link`} href='/Blog'>Blog</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className={`${NavBar.navbar__link} nav-link`} href='/Contact'>Contact</a>
-                        </li>
+                        <LLink to='/' title='Home' />
+                        <LLink to='/Menu' title='Menu' />
+                        <LLink to='/AboutUs' title='About Us' />
+                        <LLink to='/OurStory' title='Our Story' />
+                        <LLink to='/Blog' title='Blog' />
+                        <LLink to='/OurStory' title='Our Story' />
+                        <LLink to='/Contact' title='Contact' />
                     </ul>
-                    <form className="d-flex">
-                        <a className={NavBar.navbar__clone_project} href="/clone ">Clone Project
-                            <span className={NavBar.navbar__clone_icon}><HiOutlineArrowNarrowRight /></span></a>
-                    </form>
+                    <div className="d-flex">
+                        <Link className="navbar__clone_project" to="/clone ">
+                            Clone Project
+                            <span className="navbar__clone_icon"><HiOutlineArrowNarrowRight /></span>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </nav >
