@@ -1,10 +1,12 @@
 import React from 'react';
 import './Blog.scss';
-import image1 from '../../img/Image-2-1.png';
+import image2 from '../../img/Image-2-1.png';
+import image from '../../img/Image-0-1.png';
+import image1 from '../../img/Image-1-1.png';
 const Blog = () => {
     const lists = [
         {
-            img: image1,
+            img: image2,
             date: '21 Jun 2021',
             title: 'Extra Thick Homemad Pizza Sauce',
             text: 'It is a long established fact that a reader will be distracted by the readable content of a page.',
@@ -16,7 +18,7 @@ const Blog = () => {
             text: 'It is a long established fact that a reader will be distracted by the readable content of a page.',
         },
         {
-            img: image1,
+            img: image,
             date: '21 Jun 2021',
             title: '5 ways to prepare porridge',
             text: 'It is a long established fact that a reader will be distracted by the readable content of a page.',

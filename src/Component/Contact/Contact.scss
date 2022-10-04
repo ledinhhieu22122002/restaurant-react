@@ -1,27 +1,25 @@
 #Contact {
     margin: 8rem 0;
     overflow: hidden;
-    .row {
-        .col-4 {
-            background: #1F1D21;
-            padding: 0;
-            width: 30%;
-            padding: 4rem 5rem;
 
+    .row {
+        background: #1F1D21;
+
+        .col-4 {
             .row {
-                align-items: center;
+                padding: 4rem 0;
+                padding-left: 3rem;
 
                 .col {
-                    margin-bottom: 1rem;
-                    align-items: center;
-                    p {
+                    padding-top: 1rem;
+                    .title {
                         padding: .5rem 0;
                     }
                 }
             }
         }
 
-        .col-7 {
+        .col-8 {
             padding: 0;
             background: url('../../img/Map.png') no-repeat center;
             background-size: cover;

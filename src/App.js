@@ -1,6 +1,7 @@
 import Blog from "./Component/Blog/Blog";
 import More from "./Component/CnowMore/More";
 import Contacts from "./Component/Contact/Contact";
+import Footer from "./Component/Footer/Footer";
 import Headers from "./Component/Header/Headers";
 import Menu from "./Component/Menu/Menu";
 import Navbar from "./Component/Navbar/Navbar";
@@ -18,6 +19,7 @@ function App() {
       <Quote />
       <Blog />
       <Contacts />
+      <Footer />
     </>)
 }
 
