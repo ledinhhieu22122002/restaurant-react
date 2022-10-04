@@ -19,7 +19,7 @@ const Navbar = (props) => {
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <LLink to='/' title='Home' />
-                        <LLink to='/Menu' title='Menu' />
+                        <LLink to='/restaurant-react/Menu' title='Menu' />
                         <LLink to='/AboutUs' title='About Us' />
                         <LLink to='/OurStory' title='Our Story' />
                         <LLink to='/Blog' title='Blog' />
