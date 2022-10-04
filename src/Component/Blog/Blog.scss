@@ -1,0 +1,27 @@
+#Blog {
+    margin: 5rem 0;
+    .heading {
+        margin: 3rem 0;
+    }
+
+    .card {
+        background: #1F1D21;
+        .card-body{
+
+            padding: 1rem 1.5rem;
+            .card-date {
+                font-size: .8rem;
+                color: #B8B8B8;
+            }
+    
+            .card-title {
+                font-family: 'Playfair Display', sans-serif;
+                font-size: 2rem;
+                margin: 1rem 0;
+            }
+            .card-text{
+                margin: 1rem 0;
+            }
+        }
+    }
+}

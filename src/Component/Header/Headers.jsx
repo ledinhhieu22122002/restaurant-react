@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.scss';
 import img from '../../img/HeaderImage.png';
 import Button from '../button/Button';
-import Title from '../Title/Title';
+import Title from "../Title/Title";
 const Info = (props) => {
     return (
         <div className="info">
@@ -15,8 +15,8 @@ const Headers = () => {
     return (
         <header>
             <div className="container">
-                <div className="row " >
-                    <div className="col-6">
+                <div className="row justify-content-between" >
+                    <div className="col-5 p-0">
                         <div className="hero__title">
                             <Title
                                 heading="We serve high quality foods of all kinds."
@@ -26,7 +26,7 @@ const Headers = () => {
                             <Button title="View Menu" />
                             <Info
                                 h3="Opening Times"
-                                p="Sunday to Saturday  l  09:00 AM to 11:00 PM"
+                                p="Sunday to Saturday l 09:00 AM to 11:00 PM"
                             />
                             <Info
                                 h3="Location"

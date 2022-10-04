@@ -1,0 +1,82 @@
+#Quote {
+    overflow: hidden;
+    margin: 5rem 0;
+
+    .row {
+
+        .col-7 {
+            width: 55%;
+            padding: 0;
+            background: url(../../img/Image-9.png) no-repeat center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            img{
+                width: 2.5rem;
+                height: 2.5rem;
+                display: block;
+                margin: auto;
+                cursor: pointer;
+                &:hover{
+                    opacity: .8;
+                }
+            }
+        }
+
+        .col-5 {
+            width: 45%;
+            padding: 4rem 0;
+            display: flex;
+            align-items: center;
+
+            .title {
+                margin: 0 5rem;
+                margin-left: 9rem;
+                span {
+                    font-size: 7rem;
+                    color: #fff;
+                }
+
+                h2 {
+                    font-family: 'Playfair Display';
+                    font-style: normal;
+                    font-weight: lighter;
+                    font-size: 34px;
+                    color: #FFFFFF;
+                    opacity: 0.87;
+                }
+
+                .person {
+                    margin-top: 5rem;
+                    position: relative;
+                    padding: .3rem 0;
+                    border-bottom: 1px solid rgb(255, 255, 255, 0.24);
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        width: 3rem;
+                        height: 2px;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #fff;
+                    }
+                    b {
+                        opacity: 0.87;
+                    }
+
+                    p {
+                        opacity: 0.6;
+                    }
+                    img{
+                        width: 3rem;
+                        height: 3rem;
+                        display: block;
+                        margin-right: 0;
+                        margin-left: auto;
+                    }
+                }
+
+            }
+        }
+    }
+}

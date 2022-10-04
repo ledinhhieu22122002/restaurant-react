@@ -33,11 +33,14 @@ html {
             margin-top: 3rem;
         }
 
+        h2 {
+            font-size: 3rem;
+        }
+
         p {
             color: var(--color-gray-a);
             font-weight: 400;
-            font-size: 16px;
-            line-height: 28px;
+            font-size: 1rem;
         }
 
         img {
@@ -48,7 +51,10 @@ html {
 
         h1,
         h2,
-        h3 {
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Playfair Display', serif;
         }
 

@@ -1,0 +1,74 @@
+.Menu {
+    margin: 7rem 0;
+    display: block;
+    overflow: hidden;
+
+    .title {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .section_title {
+            width: 100%;
+        }
+
+        .heading {
+            width: 35%;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .text {
+            width: 40%;
+            margin-right: 10rem;
+            margin-top: -1rem;
+            padding: 0;
+            transform: translateY(50%);
+        }
+
+    }
+
+    span strong {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-top: 1rem;
+        display: block;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .menu_grid {
+        margin: 4rem 0;
+
+        .col-4 {
+            width: 30%;
+            margin: 1rem .5rem;
+
+            .menu_tiem {
+
+                background: #1F1D21;
+
+                span {
+                    padding: 1rem;
+                    display: inline-block;
+                    opacity: 0.87;
+                    font-weight: 500;
+
+                    &:nth-child(2) {
+                        width: 50%;
+                    }
+
+                    &:nth-child(3) {
+                        width: 50%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+
+    button {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+}

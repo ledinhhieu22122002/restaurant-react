@@ -1,0 +1,31 @@
+#Contact {
+    margin: 8rem 0;
+    overflow: hidden;
+    .row {
+        .col-4 {
+            background: #1F1D21;
+            padding: 0;
+            width: 30%;
+            padding: 4rem 5rem;
+
+            .row {
+                align-items: center;
+
+                .col {
+                    margin-bottom: 1rem;
+                    align-items: center;
+                    p {
+                        padding: .5rem 0;
+                    }
+                }
+            }
+        }
+
+        .col-7 {
+            padding: 0;
+            background: url('../../img/Map.png') no-repeat center;
+            background-size: cover;
+        }
+
+    }
+}

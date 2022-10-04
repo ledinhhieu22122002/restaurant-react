@@ -1,14 +1,13 @@
 import React from 'react';
-import Title from './Title.module.scss';
-
+import './Title.scss';
 const title = (props) => {
     return (
-        <div className={Title.title}>
-            <div className={Title.section_title}>
+        <div className="title">
+            <div className="section_title">
                 <span>{props.title}</span>
             </div>
-            <h2 className={Title.heading}>{props.heading}</h2>
-            <p className={Title.text}>{props.text}</p>
+            <h2 className="heading">{props.heading}</h2>
+            <p className="text">{props.text}</p>
         </div>
     );
 };
