@@ -1,8 +1,6 @@
-/* Mixin */
-/* Set các giá trị với màn hình tương ứng */
-$mobile-width: 480px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
+$mobile-width: var(--mobile-width);
+$tablet-width: var(--tablet-width);
+$desktop-width: var(--desktop-width);
 
 @mixin mobile {
     @media (max-width: #{$mobile-width - 1px}) {
@@ -23,37 +21,42 @@ $desktop-width: 1024px;
 }
 
 header {
-    .row{
+    .row {
+
         // Mobile
-            @include mobile{
-                padding: 0;
-                .col-5{
-                    padding: 0 1rem !important;
-                    h2{
-                        font-size: 1.8rem;
-                    }
+        @include mobile {
+            padding: 0;
+
+            .col-5 {
+                padding: 0 1rem !important;
+
+                h2 {
+                    font-size: 1.8rem;
                 }
             }
+        }
+
         // Tablet
         .hero__title {
             margin: 1rem 0;
-    
+
             .title .section_title {
                 display: none;
             }
-    
+
             .info {
                 padding: 1rem 0;
-    
+
                 h3 {
                     font-size: 1.3rem;
                 }
             }
         }
 
-        @include tablet{
+        @include tablet {
             flex-direction: column-reverse;
-            & > *{
+
+            &>* {
                 width: 100%;
             }
         }

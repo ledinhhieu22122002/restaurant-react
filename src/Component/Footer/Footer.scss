@@ -1,6 +1,6 @@
-$mobile-width: 480px;
-$tablet-width: 768px;
-$desktop-width: 1024px;
+$mobile-width: var(--mobile-width);
+$tablet-width: var(--tablet-width);
+$desktop-width: var(--desktop-width);
 
 @mixin mobile {
     @media (max-width: #{$mobile-width - 1px}) {
@@ -89,8 +89,9 @@ $desktop-width: 1024px;
                             display: block;
                         }
                     }
-                    &:nth-child(3){
-                        button{
+
+                    &:nth-child(3) {
+                        button {
                             justify-content: center;
                             margin-right: auto;
                         }
