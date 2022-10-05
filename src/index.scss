@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,600;0,700;1,300;1,500;1,600&display=swap');
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
 
 :root {
     --color-black-a: #19161B;
@@ -27,6 +48,10 @@ html {
 
         .container {
             padding: 0 3rem;
+
+            @include mobile {
+                padding: 0 1.5rem;
+            }
         }
 
         header {
@@ -35,6 +60,10 @@ html {
 
         h2 {
             font-size: 3rem;
+
+            @include mobile {
+                font-size: 2rem;
+            }
         }
 
         p {
@@ -60,7 +89,6 @@ html {
 
         section {
             margin-top: 10rem;
-
         }
     }
 }

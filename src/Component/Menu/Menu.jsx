@@ -61,7 +61,7 @@ const Menu = () => {
                     heading='Discover our menu chart'
                     text='Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic.. Through True Rich Attended does no end it his mother'
                 />
-                <span><strong>Most Popular Picks</strong></span>
+                <strong>Most Popular Picks</strong>
 
                 <div className="menu_grid row">
                     {ListImg.map((list, index) => (

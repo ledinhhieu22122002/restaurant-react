@@ -1,15 +1,14 @@
 import React from 'react';
-import './More.scss';
 import img1 from '../../img/Know more Image 1.png';
 import img2 from '../../img/Know more Image 2.png';
 import icon from '../../img/Icon.svg';
 import Button from '../button/Button';
 import Title from '../Title/Title';
+import './More.scss';
 const More = () => {
     return (
         <section id='cnow-more'>
             <div className="container">
-
                 <div className="row justify-content-around">
                     <div className="col-6">
                         <Title

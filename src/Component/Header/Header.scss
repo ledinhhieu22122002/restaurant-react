@@ -1,16 +1,60 @@
-header {
-    .hero__title {
-        margin: 1rem 0;
+/* Mixin */
+/* Set các giá trị với màn hình tương ứng */
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
 
-        .title .section_title {
-            display: none;
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+header {
+    .row{
+        // Mobile
+            @include mobile{
+                padding: 0;
+                .col-5{
+                    padding: 0 1rem !important;
+                    h2{
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        // Tablet
+        .hero__title {
+            margin: 1rem 0;
+    
+            .title .section_title {
+                display: none;
+            }
+    
+            .info {
+                padding: 1rem 0;
+    
+                h3 {
+                    font-size: 1.3rem;
+                }
+            }
         }
 
-        .info {
-            padding: 1rem 0;
-
-            h3 {
-                font-size: 1.3rem;
+        @include tablet{
+            flex-direction: column-reverse;
+            & > *{
+                width: 100%;
             }
         }
     }

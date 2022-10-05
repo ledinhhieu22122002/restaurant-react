@@ -1,16 +1,48 @@
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
 #Contact {
     margin: 8rem 0;
     overflow: hidden;
 
     .row {
+        @include tablet{
+            flex-direction: column-reverse;
+        }
         background: #1F1D21;
 
         .col-4 {
+            @include tablet{
+                width: 100%;
+            }
             .row {
                 padding: 4rem 0;
                 padding-left: 3rem;
-
+                @include tablet{
+                    flex-direction: row !important;
+                    padding: 3rem 1rem;
+                }
                 .col {
+                    
                     padding-top: 1rem;
                     .title {
                         padding: .5rem 0;
@@ -23,6 +55,10 @@
             padding: 0;
             background: url('../../img/Map.png') no-repeat center;
             background-size: cover;
+            @include tablet{
+                height: 30vh;
+                width: 100%;
+            }
         }
 
     }
