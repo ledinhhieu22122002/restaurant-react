@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from '../Title/Title';
 import "./Serving.scss";
-import icon1 from "../../img/Icon-1.png";
-import icon2 from "../../img/Icon-2.png";
-import icon3 from "../../img/Icon-3.png";
-import icon4 from "../../img/Icon-4.png";
-import icon5 from "../../img/Icon-5.png";
-import icon6 from "../../img/Icon-6.png";
+import icon1 from "../../assets/img/Icon-1.png";
+import icon2 from "../../assets/img/Icon-2.png";
+import icon3 from "../../assets/img/Icon-3.png";
+import icon4 from "../../assets/img/Icon-4.png";
+import icon5 from "../../assets/img/Icon-5.png";
+import icon6 from "../../assets/img/Icon-6.png";
 
 const Serving = () => {
     const arraylists = [

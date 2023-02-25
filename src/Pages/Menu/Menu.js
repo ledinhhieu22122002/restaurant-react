@@ -1,4 +1,4 @@
-import Menus from "../Component/Menu/Menu";
+import Menus from "../../Component/Menu/Menu";
 function Menu() {
     return (
         <>

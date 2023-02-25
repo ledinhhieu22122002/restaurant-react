@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from '../Title/Title';
 import './Menu.scss';
-import image1 from '../../img/Image-5.png';
-import image2 from '../../img/Image-4.png';
-import image3 from '../../img/Image-3.png';
-import image4 from '../../img/Image-2.png';
-import image5 from '../../img/Image-1.png';
-import image6 from '../../img/Image.png';
+import image1 from '../../assets/img/Image-5.png';
+import image2 from '../../assets/img/Image-4.png';
+import image3 from '../../assets/img/Image-3.png';
+import image4 from '../../assets/img/Image-2.png';
+import image5 from '../../assets/img/Image-1.png';
+import image6 from '../../assets/img/Image.png';
 import Button from '../button/Button';
 const Menu = () => {
     const ListImg = [

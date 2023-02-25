@@ -53,7 +53,7 @@ $desktop-width: 1024px;
 
         .col-8 {
             padding: 0;
-            background: url('../../img/Map.png') no-repeat center;
+            background: url('../../assets/img/Map.png') no-repeat center;
             background-size: cover;
             @include tablet{
                 height: 30vh;

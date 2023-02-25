@@ -1,4 +1,4 @@
-import More from "../Component/CnowMore/More";
+import More from "../../Component/CnowMore/More";
 function About() {
     return (
         <>

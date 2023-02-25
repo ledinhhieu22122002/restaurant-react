@@ -1,8 +1,8 @@
 import React from 'react';
 import './Blog.scss';
-import image2 from '../../img/Image-2-1.png';
-import image from '../../img/Image-0-1.png';
-import image1 from '../../img/Image-1-1.png';
+import image2 from '../../assets/img/Image-2-1.png';
+import image from '../../assets/img/Image-0-1.png';
+import image1 from '../../assets/img/Image-1-1.png';
 const Blog = () => {
     const lists = [
         {

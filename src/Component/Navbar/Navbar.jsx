@@ -32,7 +32,6 @@ const Navbar = (props) => {
                         <LLink to='/AboutUs' title='About Us' />
                         <LLink to='/OurStory' title='Our Story' />
                         <LLink to='/Blog' title='Blog' />
-                        <LLink to='/OurStory' title='Our Story' />
                         <LLink to='/Contact' title='Contact' />
                     </ul>
                     <div className="button d-flex">

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import img from '../../img/HeaderImage.png';
+import img from '../../assets/img/HeaderImage.png';
 import Button from '../button/Button';
 import Title from "../Title/Title";
 

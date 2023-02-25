@@ -1,7 +1,6 @@
 import React from 'react';
 import './Quote.scss';
-import Avatar from '../../img/avata.png';
-import Play from '../../img/Play.png';
+import Avatar from '../../assets/img/avata.png';
 const Quote = () => {
     return (
         <section id='Quote'>
@@ -25,7 +24,7 @@ const Quote = () => {
                     </div>
                 </div>
                 <div className="col-7">
-                    <img src={Play} alt="" />
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TT9wIWPlOYs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </section>

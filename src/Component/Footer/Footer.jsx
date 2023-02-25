@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../../img/Logo.svg";
+import Logo from "../../assets/img/Logo.svg";
 import './Footer.scss';
 import Button from "../button/Button";
 import { BsFacebook, BsTwitter } from "react-icons/bs";

@@ -1,7 +1,7 @@
 import React from 'react';
-import img1 from '../../img/Know more Image 1.png';
-import img2 from '../../img/Know more Image 2.png';
-import icon from '../../img/Icon.svg';
+import img1 from '../../assets/img/Know more Image 1.png';
+import img2 from '../../assets/img/Know more Image 2.png';
+import icon from '../../assets/img/Icon.svg';
 import Button from '../button/Button';
 import Title from '../Title/Title';
 import './More.scss';
